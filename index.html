@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Développeur web junior.">
+    <meta name="author" content="Maxime LECLERE">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/main.js"></script>
+    <title>Développeur Web - Maxime Leclere</title>
+</head>
+
+<body>
+    <div id="loadContainer">
+        <div id="keyBoard" class="hide">
+            <span id="letterChar">azertyuiop-qsdfghjklm-wxcvbn- </span>
+        </div>
+    </div>
+
+    <div id="sideBar">
+        <section id="navigation">
+            <h3 class="titleSideBar">Navigation</h3>
+            <nav id="navSideBarNavigation">
+                <ul>
+                    <li><a class="linkHome">Acceuil</a></li>
+                    <li><a class="linkLink">Lien</a></li>
+                    <li><a class="linkProject">Projet</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="contact">
+            <h3 class="titleSideBar">Contact</h3>
+            <address id="contactSideBar">
+                <div id="numTelBox">
+                    <i></i>
+                    <a href="tel:+33781492276">(+33)7.81.49.22.76</a>
+                </div>
+                <div id="mailBox">
+                    <i></i>
+                    <a href="mailto:maxleclere1999@gmail.com">maxleclere1999@gmail.com</a>
+                </div>
+                <div id="linkBox">
+                    <i></i>
+                    <a href="http://maxime-leclere.alwaysdata.net">maxime-leclere.alwaysdata.net</a>
+                </div>
+            </address>
+        </section>
+    </div>
+    <div id="slidePage" class="closeSlide">
+        <header id="headerSlide">
+            <button id="btnCloseSlide" class="btnSlide">
+                <span>&#10005;</span>
+            </button>
+            <h2 id="titleSlide"></h2>
+        </header>
+        <hr id="hrHeaderMain">
+        <main id="mainSlide">
+            <section id="imgSlide"></section>
+            <section id="noteSlide">
+                <div id="presentationSlide"></div>
+                <div id="infoSlide">
+                    <h3 id="titleInfoSlide">Infos Projet</h3>
+                    <hr>
+                    <div id="infoProject">
+                        <div><span>Année : </span><span id="timeProject"></span></div>
+                        <div><span>Catégorie : </span><span id="categProject"></span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footerSlide">
+            <div id="blockPagination">
+                <button id="btnBeforePagination" class="btnSlide btnPagination">
+                    <span>&#129120;</span>
+                </button>
+                <button id="btnNextPagination" class="btnSlide btnPagination">
+                    <span>&#129122;</span>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <header id="menu">
+        <nav id="navMenu">
+            <!-- <div id="logo"></div> -->
+            <ul id="listLink">
+                <li><a class="linkHome"><img id="imgHome" src="resource/image/menu_home.png"></a></li>
+                <li><a class="linkLink">Lien</a></li>
+                <li><a class="linkProject">Projet</a></li>
+            </ul>
+            <button id="buttonSideMenu">
+                <div class="spinContainer">
+                    <div class="front">
+                        <div class="bar b1"></div>
+                        <div class="bar b2"></div>
+                        <div class="bar b3"></div>
+                    </div>
+                    <div class="back">
+                        <div class="bar b-back1"></div>
+                        <div class="bar b-back2"></div>
+                    </div>
+                </div>
+            </button>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="homePart">
+            <div class="textPresentation">
+                <h1 class="name">Maxime LECLERE</h1>
+                <h1 class="job">Développeur Web</h1>
+            </div>
+            <video src="resource/video/Typing_dark_03_Videvo.mov" autoplay muted loop></video>
+        </section>
+        <section id="linkPart">
+            <h2 id="titleLink">Lien</h2>
+            <ul>
+                <li>
+                    <img id="imgLinkedin" src="resource/image/LI-In-Bug.png" alt="logo du site web linkedin"/>
+                    <a href="https://www.linkedin.com/in/maxime-leclere-01a19b224/" target="_blank"
+                        class="textAnimated">
+                        <div class="spanContainer s1">
+                            <span>Linkedin</span>
+                        </div>
+                        <div class="spanContainer s2">
+                            <span>Linkedin</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <img id="imgGithub" src="resource/image/GitHub-Mark-Light-120px-plus.png" alt="logo du site web github">
+                    <a href="https://github.com/Maxime-Leclere-pro" target="_blank" class="textAnimated">
+                        <div class="spanContainer s1">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="spanContainer s2">
+                            <span>GitHub</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="projectPart">
+            <h2 id="titleProject">Projet</h2>
+            <div class="grid">
+                <div class="gridItem" 
+                    data-skill="html;css;javascript;jquery;responsive" 
+                    data-time="2021" 
+                    data-title-presentation="Développement complet"
+                    data-presentation="Un Portfolio programmé à la main de A à Z."
+                    data-list-presentation="Intégration HTML - CSS.;Dynamisme des pages par Javascript(Jquery)."
+                    data-list-url="GitHub!https://github.com;Google!https://google.com">
+                    <div class="imgBox">
+                        <img src="resource/image/capture_portfolio.png" alt="capture d'écran du site">
+                        <div class="hoverImgBox">
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <p class="titleWork">Portfolio</p>
+                        <p class="typeWork">Développement Web</p>
+                    </div>
+                </div>
+                <div class="gridItem" 
+                    data-skill="html;css;javascript;jquery;responsive;test" 
+                    data-time="2021" 
+                    data-title-presentation="Test complet"
+                    data-presentation="coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.coucou c'est un test de presentation à afficher.">
+                    <div class="imgBox">
+                        <img src="https://www.wallpapertip.com/wmimgs/0-2382_naruto-hd.jpg" alt="">
+                        <div class="hoverImgBox">
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <p class="titleWork">Coucou test Naruto long test pour tester</p>
+                        <p class="typeWork">Développement Web</p>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <div class="imgBox">
+                        <img src="resource/image/capture_portfolio.png" alt="">
+                        <div class="hoverImgBox">
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <p class="titleWork">Coucou test</p>
+                        <p class="typeWork">Développement Web</p>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <div class="imgBox">
+                        <img src="resource/image/capture_portfolio.png" alt="">
+                        <div class="hoverImgBox">
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <p class="titleWork">Coucou test</p>
+                        <p class="typeWork">Développement Web</p>
+                    </div>
+                </div>
+                <div class="gridItem">
+                    <div class="imgBox">
+                        <img src="resource/image/capture_portfolio.png" alt="">
+                        <div class="hoverImgBox">
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="textBox">
+                        <p class="titleWork">Coucou test</p>
+                        <p class="typeWork">Développement Web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="infoAuthor">
+            <h4 class="nameAuthor">Maxime LECLERE</h4>
+            <address>
+                <div id="numTelBox">
+                    <i></i>
+                    <a href="tel:+33781492276">(+33)7.81.49.22.76</a>
+                </div>
+                <div id="mailBox">
+                    <i></i>
+                    <a href="mailto:maxleclere1999@gmail.com">maxleclere1999@gmail.com</a>
+                </div>
+                <div id="linkBox">
+                    <i></i>
+                    <a href="http://maxime-leclere.alwaysdata.net">maxime-leclere.alwaysdata.net</a>
+                </div>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
