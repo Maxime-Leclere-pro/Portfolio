@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family:"EmojiSymbols";
-    src:url('resource/font/EmojiSymbols-Regular.woff') format("woff");
+    font-family: "EmojiSymbols";
+    src: url('resource/font/EmojiSymbols-Regular.woff') format("woff");
 }
 
 *, ::before, ::after {
@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: black;
     overflow: hidden;
 }
@@ -90,12 +90,12 @@ div#loadContainer {
     border: 2px solid #9b9b9b;
     border-radius: 10px;
     color: #525252;
-    
+
     display: table;
     text-align: center;
 
-    transition: 
-    transform 0.2s ease-in-out;
+    transition:
+        transform 0.2s ease-in-out;
 }
 
 .spaceKey {
@@ -126,7 +126,7 @@ header#menu {
     position: fixed;
     width: 100%;
     z-index: 4;
-    transition: 
+    transition:
         width 0.4s ease-in-out,
         transform 0.4s ease-in-out;
 }
@@ -143,8 +143,8 @@ header#menu.sideBarVisible.slidePageVisible, header#menu.slidePageVisible {
     width: 50%;
 }
 
-header#menu.sideBarVisible.scrolling, 
-header#menu.sideBarVisible.slidePageVisible.scrolling, 
+header#menu.sideBarVisible.scrolling,
+header#menu.sideBarVisible.slidePageVisible.scrolling,
 header#menu.slidePageVisible.scrolling {
     width: 100%;
 }
@@ -175,7 +175,7 @@ header#menu.visible::after {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)
 }
 
-header#menu nav#navMenu{
+header#menu nav#navMenu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,14 +276,14 @@ button#buttonSideMenu {
     background: linear-gradient(45deg, rgb(225, 225, 225), rgb(155, 155, 155));
 }
 
-.back  {
-    background: linear-gradient(45deg, rgb(155,155,155), rgb(225, 225, 225));
+.back {
+    background: linear-gradient(45deg, rgb(155, 155, 155), rgb(225, 225, 225));
     transform: rotateY(180deg);
 }
 
 .front.scrolling {
     background: linear-gradient(45deg, rgb(250, 250, 250), #EAEAEA);
-} 
+}
 
 .back.scrolling {
     background: linear-gradient(45deg, #EAEAEA, rgb(250, 250, 250));
@@ -298,41 +298,33 @@ button#buttonSideMenu {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: 
-        translate(-50%)
-        translateZ(20px);
+    transform:
+        translate(-50%) translateZ(20px);
 }
 
 .b1 {
-    transform: 
-        translate(-50%, -300%)
-        translateZ(20px);
+    transform:
+        translate(-50%, -300%) translateZ(20px);
 }
 
 .b2 {
-    transform: 
-        translate(-50%)
-        translateZ(20px);
+    transform:
+        translate(-50%) translateZ(20px);
 }
 
 .b3 {
-    transform: 
-        translate(-50%, 300%)
-        translateZ(20px);
+    transform:
+        translate(-50%, 300%) translateZ(20px);
 }
 
 .b-back1 {
-    transform: 
-        translate(-50%, 0%)
-        translateZ(20px)
-        rotateZ(45deg);
+    transform:
+        translate(-50%, 0%) translateZ(20px) rotateZ(45deg);
 }
 
 .b-back2 {
-    transform: 
-        translate(-50%, 0%)
-        translateZ(20px)
-        rotateZ(-45deg);
+    transform:
+        translate(-50%, 0%) translateZ(20px) rotateZ(-45deg);
 }
 
 /* Side Bar */
@@ -450,15 +442,14 @@ hr#hrHeaderMain {
 }
 
 div#slidePage header#headerSlide h2#titleSlide {
-    font-family: "Nunito", Helvetica,Arial,sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 /* main Slide */
-main#mainSlide {
-}
+main#mainSlide {}
 
 /* section img */
 
@@ -507,7 +498,7 @@ div#presentationSlide ul li span.listStyleSpan {
 div#presentationSlide h3.titlePresentation, div#infoSlide h3#titleInfoSlide {
     font-size: 1.3em;
     font-weight: 700;
-    font-family: "Lato",Georgia,"Times New Roman",Times,serif;
+    font-family: "Lato", Georgia, "Times New Roman", Times, serif;
     text-transform: uppercase;
     color: black;
 }
@@ -558,7 +549,7 @@ span#categProject {
     border-radius: 4px;
     color: #636363;
 
-    transition: 
+    transition:
         background-color 0.2s ease-in-out,
         color 0.2s ease-in-out;
 }
@@ -584,7 +575,7 @@ footer#footerSlide {
 
 main#main {
     width: 100%;
-    transition: 
+    transition:
         width 0.4s ease-in-out,
         transform 0.4s ease-in-out;
 }
@@ -672,7 +663,7 @@ section#linkPart ul li {
 
     transform: translateX(-100%);
     opacity: 0;
-    transition: 
+    transition:
         transform 0.5s ease-in-out,
         opacity 0.4s ease-in-out;
 }
@@ -703,15 +694,13 @@ section#linkPart ul li a:hover {
 }
 
 .textAnimated:hover .s1 span {
-    transform: 
-        translateY(100%)
-        rotateX(90deg);
+    transform:
+        translateY(100%) rotateX(90deg);
 }
 
 .textAnimated:hover .s2 span {
-    transform: 
-        translateY(0%)
-        rotateX(0deg);
+    transform:
+        translateY(0%) rotateX(0deg);
 }
 
 .s1 span {
@@ -720,9 +709,8 @@ section#linkPart ul li a:hover {
 
 .s2 span {
     transform-origin: bottom;
-    transform: 
-        translateY(-100%) 
-        rotateX(90deg);
+    transform:
+        translateY(-100%) rotateX(90deg);
 }
 
 .s2 {
@@ -732,7 +720,7 @@ section#linkPart ul li a:hover {
 }
 
 #imgLinkedin {
-    filter: brightness(0) invert(1);    
+    filter: brightness(0) invert(1);
     width: 12%;
     min-width: 100px;
 }
@@ -788,7 +776,7 @@ h2#titleProject {
     flex-direction: column;
     justify-content: center;
     gap: 20%;
-    
+
     height: 25%;
     background-color: #f3f3f3;
     padding: 5%;
@@ -905,13 +893,16 @@ address div#linkBox i::before {
     header#menu nav#navMenu {
         justify-content: space-between;
     }
+
     header#menu nav#navMenu ul#listLink li:nth-of-type(n+2) {
         display: none;
     }
+
     header#menu nav#navMenu button#buttonSideMenu {
         margin-left: 5%;
         margin-right: 5%;
     }
+
     main#main.sideBarVisible {
         width: 100%;
         transform: translateX(calc(-200px - 3.5%));
@@ -920,6 +911,7 @@ address div#linkBox i::before {
     section#noteSlide {
         flex-wrap: wrap;
     }
+
     div#presentationSlide {
         margin-bottom: 2%;
     }
@@ -930,6 +922,7 @@ address div#linkBox i::before {
         width: 100%;
         transform: translateX(-100%);
     }
+
     div#slidePage {
         width: 100%;
     }
